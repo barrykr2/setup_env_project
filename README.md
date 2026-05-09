@@ -9,6 +9,7 @@ This suite provides a "Golden Image" environment for systems architects and deve
 *   **Decentralized Intelligence**: The `.bashrc` is a standalone, intelligent agent. It manages its own **$PATH** requirements every time it is executed, ensuring idempotency across login sessions and manual sourcing.
 *   **Idempotent Execution**: The `setup_env.sh` script can be run multiple times safely. It verifies the physical state of the filesystem before making any modifications.
 *   **User-Independent & Verbose**: Designed to run seamlessly across different hardware, such as a NUC or SER5, while providing clear, color-coded feedback for every action.
+*   **Developed for Arch based Distros**: Designed and tested on Endeavour OS, yet to be tested on other Arch based distros.
 
 ---
 
