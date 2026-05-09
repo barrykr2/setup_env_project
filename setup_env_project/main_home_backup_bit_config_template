@@ -1,0 +1,18 @@
+# --- Back In Time Configuration Template ---
+# Profile: Main Home Backup
+# Managed by setup_env.sh
+
+profile1.name=Main Home Backup
+profile1.snapshots.path=BASE_MOUNT/DATA_BACKUP_LABEL
+profile1.snapshots.smart_remove=true
+profile1.snapshots.smart_remove.keep_all=7
+profile1.snapshots.smart_remove.keep_one_per_day=30
+profile1.snapshots.smart_remove.keep_one_per_month=12
+
+profile1.include.1.value=USER_HOME
+profile1.exclude.1.value=USER_HOME/.cache
+profile1.exclude.2.value=USER_HOME/.local/share/Trash
+profile1.exclude.3.value=USER_HOME/.var
+profile1.exclude.4.value=USER_HOME/.local/share/flatpak
+profile1.exclude.5.value=**node_modules**
+profile1.exclude.6.value=**__pycache__**
